@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KcW-UC-p2a">
+    <device id="retina3_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Karla-VariableFont_wght.ttf">
+            <string>Karla-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hxn-Yc-aOE">
+            <objects>
+                <navigationController id="KcW-UC-p2a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="5YX-tB-RGB">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.95595854920000001" green="0.33775396120000001" blue="0.75232564970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="24"/>
+                            <color key="textColor" red="0.95595854920000001" green="0.33775396120000001" blue="0.75232564970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                            <color key="textColor" red="0.95595854920000001" green="0.017858397509999999" blue="0.49008609619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9eA-6I-5fd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOc-aY-5Cv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739" y="151"/>
+        </scene>
+        <!--viewcontroller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="viewcontroller" customClass="ViewController" customModule="Worksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-ox-p08">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CeldaTrabajador" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaTrabajador" rowHeight="317" id="ir3-eg-EP9" userLabel="CeldaTrabajador" customClass="CeldaTrabajadorController" customModule="Worksapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="480" height="317"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ir3-eg-EP9" id="asC-hf-fuu">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="317"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-gL-56r">
+                                                    <rect key="frame" x="0.0" y="0.0" width="480" height="79.5"/>
+                                                    <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="23"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puesto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJh-cJ-Mab">
+                                                    <rect key="frame" x="0.0" y="169" width="447.5" height="79"/>
+                                                    <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="24"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-51-zkJ">
+                                                    <rect key="frame" x="0.0" y="87" width="447.5" height="79"/>
+                                                    <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="24"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAt-dV-OhH">
+                                                    <rect key="frame" x="0.0" y="247" width="447.5" height="63.5"/>
+                                                    <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="24"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hV2-gL-56r" secondAttribute="trailing" id="5Cj-nQ-T3d"/>
+                                                <constraint firstItem="TJh-cJ-Mab" firstAttribute="height" secondItem="asC-hf-fuu" secondAttribute="height" multiplier="0.25" id="5Wi-Bv-MeQ"/>
+                                                <constraint firstItem="gT3-51-zkJ" firstAttribute="height" secondItem="asC-hf-fuu" secondAttribute="height" multiplier="0.25" id="6Tq-Aj-N4U"/>
+                                                <constraint firstItem="hV2-gL-56r" firstAttribute="leading" secondItem="asC-hf-fuu" secondAttribute="leading" id="AFO-oz-xhY"/>
+                                                <constraint firstItem="GAt-dV-OhH" firstAttribute="top" secondItem="TJh-cJ-Mab" secondAttribute="bottom" constant="-1" id="Kcm-Al-sky"/>
+                                                <constraint firstItem="hV2-gL-56r" firstAttribute="top" secondItem="asC-hf-fuu" secondAttribute="top" id="MHh-K8-9B7"/>
+                                                <constraint firstItem="TJh-cJ-Mab" firstAttribute="top" secondItem="gT3-51-zkJ" secondAttribute="bottom" constant="2.6666666666666856" id="OtE-Mg-AAh"/>
+                                                <constraint firstItem="gT3-51-zkJ" firstAttribute="top" secondItem="hV2-gL-56r" secondAttribute="bottom" constant="7.6666666666666714" id="TO7-o5-C3O"/>
+                                                <constraint firstItem="TJh-cJ-Mab" firstAttribute="leading" secondItem="asC-hf-fuu" secondAttribute="leading" id="V4L-L9-x05"/>
+                                                <constraint firstItem="GAt-dV-OhH" firstAttribute="leading" secondItem="asC-hf-fuu" secondAttribute="leading" id="Ya6-wT-h1l"/>
+                                                <constraint firstItem="gT3-51-zkJ" firstAttribute="width" secondItem="asC-hf-fuu" secondAttribute="width" multiplier="0.932367" id="aWx-Sb-KmA"/>
+                                                <constraint firstItem="GAt-dV-OhH" firstAttribute="width" secondItem="asC-hf-fuu" secondAttribute="width" multiplier="0.932367" id="dXM-Bi-ild"/>
+                                                <constraint firstItem="hV2-gL-56r" firstAttribute="height" secondItem="asC-hf-fuu" secondAttribute="height" multiplier="0.25" id="kWh-cT-3mr"/>
+                                                <constraint firstItem="gT3-51-zkJ" firstAttribute="leading" secondItem="asC-hf-fuu" secondAttribute="leading" id="mBB-ff-uSH"/>
+                                                <constraint firstItem="TJh-cJ-Mab" firstAttribute="width" secondItem="asC-hf-fuu" secondAttribute="width" multiplier="0.932367" id="odf-Qf-7bg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="GAt-dV-OhH" firstAttribute="height" secondItem="ir3-eg-EP9" secondAttribute="height" multiplier="0.2" id="Vc9-wf-sW6"/>
+                                            <constraint firstItem="GAt-dV-OhH" firstAttribute="width" secondItem="ir3-eg-EP9" secondAttribute="width" multiplier="0.932518" id="ck4-bh-VFa"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="lblApellido" destination="gT3-51-zkJ" id="I3y-qj-vUr"/>
+                                            <outlet property="lblEdad" destination="GAt-dV-OhH" id="G8z-8Q-dfM"/>
+                                            <outlet property="lblNombre" destination="hV2-gL-56r" id="lLW-Mm-Zbi"/>
+                                            <outlet property="lblPuesto" destination="TJh-cJ-Mab" id="NKU-RS-gnv"/>
+                                            <segue destination="CdZ-3Z-DD4" kind="show" identifier="goToEditar" id="QFd-UT-ImK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Q5G-Ak-5dI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iYL-68-1np"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vaG-ox-p08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IaA-4B-ela"/>
+                            <constraint firstItem="vaG-ox-p08" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OV9-cQ-WwR"/>
+                            <constraint firstItem="vaG-ox-p08" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="elo-ML-teW"/>
+                            <constraint firstAttribute="bottom" secondItem="vaG-ox-p08" secondAttribute="bottom" id="sC9-uB-m4V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lbv-wa-mPE" userLabel="New Item">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hpL-a1-Nz6">
+                            <color key="tintColor" red="0.95595854920000001" green="0.017858397509999999" blue="0.49008609619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Alk-A0-Uza" kind="show" identifier="goToAgregar" id="AxE-wW-9uU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tvTrabajadores" destination="vaG-ox-p08" id="3ML-Nr-NSN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.68115942028987"/>
+        </scene>
+        <!--Agregar Trabajador Controller-->
+        <scene sceneID="f3b-pT-spR">
+            <objects>
+                <viewController id="Alk-A0-Uza" customClass="AgregarTrabajadorController" customModule="Worksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZ5-qS-lPb">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHY-Hs-xeD">
+                                <rect key="frame" x="0.0" y="33.5" width="195" height="13"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJy-ex-3O1">
+                                <rect key="frame" x="0.0" y="46.5" width="403.5" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr8-wb-mRe">
+                                <rect key="frame" x="0.0" y="59.5" width="213.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-96-dCQ">
+                                <rect key="frame" x="0.0" y="76" width="403.5" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I4w-AJ-3up">
+                                <rect key="frame" x="0.0" y="106" width="233" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-qA-9rU">
+                                <rect key="frame" x="357" y="139" width="123" height="14"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-F9-4MS">
+                                <rect key="frame" x="339.5" y="153" width="140.5" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nacionalidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZR-8k-zUR">
+                                <rect key="frame" x="0.0" y="117" width="115.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JRP-HY-zJe">
+                                <rect key="frame" x="0.0" y="134" width="230.5" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-W6-rh0">
+                                <rect key="frame" x="0.0" y="232.5" width="227" height="16"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJj-aj-rwM">
+                                <rect key="frame" x="0.0" y="248.5" width="161" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estudios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiP-7A-qVr">
+                                <rect key="frame" x="0.0" y="147.5" width="125" height="15"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rTJ-gP-EQb">
+                                <rect key="frame" x="0.0" y="164" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGh-Ey-qNk">
+                                <rect key="frame" x="0.0" y="192.5" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zP-bL-3Cp">
+                                <rect key="frame" x="0.0" y="202.5" width="178.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Elr-3V-AEo">
+                                <rect key="frame" x="0.0" y="220.5" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puesto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-mA-2j9">
+                                <rect key="frame" x="0.0" y="260.5" width="179.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-Rr-a7Q">
+                                <rect key="frame" x="0.0" y="279.5" width="161" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93419845400000001" blue="0.34155540899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.82124352329999994" green="0.01534176697" blue="0.4210224729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4m-bl-GAb">
+                                <rect key="frame" x="0.0" y="88" width="213.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uff-Qa-Jet">
+                                <rect key="frame" x="0.0" y="176" width="154" height="18"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-cq-YQs" userLabel="Guardar">
+                                <rect key="frame" x="199.5" y="282" width="81" height="38"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="22"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapGuardar:" destination="Alk-A0-Uza" eventType="touchUpInside" id="4kt-Ic-KKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SmX-W6-rh0" firstAttribute="top" secondItem="Elr-3V-AEo" secondAttribute="bottom" id="0AK-JY-Q4v"/>
+                            <constraint firstItem="NHY-Hs-xeD" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="0BR-lD-ERQ"/>
+                            <constraint firstItem="Xr8-wb-mRe" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="0s5-UF-EE0"/>
+                            <constraint firstItem="rTJ-gP-EQb" firstAttribute="top" secondItem="QiP-7A-qVr" secondAttribute="bottom" multiplier="1.01" id="11v-9w-ajm"/>
+                            <constraint firstItem="LIc-Rr-S4U" firstAttribute="trailing" secondItem="oLx-F9-4MS" secondAttribute="trailing" id="1gX-9R-u4Y"/>
+                            <constraint firstItem="y4m-bl-GAb" firstAttribute="top" secondItem="JAF-96-dCQ" secondAttribute="bottom" id="2I0-Tk-ANZ"/>
+                            <constraint firstItem="Xr8-wb-mRe" firstAttribute="top" secondItem="uJy-ex-3O1" secondAttribute="bottom" multiplier="1.02" id="2rd-CO-ZWm"/>
+                            <constraint firstItem="XJj-aj-rwM" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.335749" id="5ZU-rm-XC1"/>
+                            <constraint firstItem="eGh-Ey-qNk" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="5ZV-MH-uRm"/>
+                            <constraint firstItem="Uff-Qa-Jet" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.05625" id="6eA-le-q4x"/>
+                            <constraint firstItem="2PL-Rr-a7Q" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.335749" id="8Ql-6U-Kgg"/>
+                            <constraint firstItem="y4m-bl-GAb" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.05625" id="9CM-5Y-sB7"/>
+                            <constraint firstItem="JRP-HY-zJe" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="9Ev-QW-Pdk"/>
+                            <constraint firstItem="I4w-AJ-3up" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="9VA-1y-158"/>
+                            <constraint firstItem="Uff-Qa-Jet" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.320734" id="9fW-Ih-ghf"/>
+                            <constraint firstItem="uJy-ex-3O1" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="A6z-K8-6mi"/>
+                            <constraint firstItem="QiP-7A-qVr" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="ANp-uA-WPl"/>
+                            <constraint firstItem="oLx-F9-4MS" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.292271" id="AeV-Xy-J4B"/>
+                            <constraint firstItem="NHY-Hs-xeD" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0397196" id="AoG-cG-RV4"/>
+                            <constraint firstItem="kSW-qA-9rU" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.256039" id="BXD-QL-Fjt"/>
+                            <constraint firstItem="LIc-Rr-S4U" firstAttribute="bottom" secondItem="iRO-cq-YQs" secondAttribute="bottom" id="C6f-Vh-bE1"/>
+                            <constraint firstItem="uJy-ex-3O1" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="CRT-ve-UYu"/>
+                            <constraint firstItem="rTJ-gP-EQb" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.485507" id="CbY-av-fht"/>
+                            <constraint firstItem="fZR-8k-zUR" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0521807" id="Cp0-9Y-fTy"/>
+                            <constraint firstItem="6Li-mA-2j9" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.374396" id="Dzm-NB-AlD"/>
+                            <constraint firstItem="kSW-qA-9rU" firstAttribute="top" secondItem="JAF-96-dCQ" secondAttribute="bottom" constant="50.670000000000002" id="ED9-jf-p1k"/>
+                            <constraint firstItem="SmX-W6-rh0" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="GTM-ke-2T2"/>
+                            <constraint firstItem="JAF-96-dCQ" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.84058" id="GgE-Bp-awi"/>
+                            <constraint firstItem="fZR-8k-zUR" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="Ipw-R8-7kK"/>
+                            <constraint firstItem="iRO-cq-YQs" firstAttribute="centerX" secondItem="BZ5-qS-lPb" secondAttribute="centerX" id="Joi-2l-2DB"/>
+                            <constraint firstItem="9zP-bL-3Cp" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="KBw-bk-BI3"/>
+                            <constraint firstItem="QiP-7A-qVr" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.046875" id="KfX-Qt-jEG"/>
+                            <constraint firstItem="Xr8-wb-mRe" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.444444" id="LHT-3U-UhM"/>
+                            <constraint firstItem="XJj-aj-rwM" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="LS4-OG-u5Z"/>
+                            <constraint firstItem="Elr-3V-AEo" firstAttribute="top" secondItem="9zP-bL-3Cp" secondAttribute="bottom" id="Nuv-uf-bAt"/>
+                            <constraint firstItem="oLx-F9-4MS" firstAttribute="top" secondItem="kSW-qA-9rU" secondAttribute="bottom" id="Ovd-x8-UKF"/>
+                            <constraint firstItem="2PL-Rr-a7Q" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="PBp-td-Eli"/>
+                            <constraint firstItem="2PL-Rr-a7Q" firstAttribute="top" secondItem="6Li-mA-2j9" secondAttribute="bottom" id="QWF-pe-7F3"/>
+                            <constraint firstItem="9zP-bL-3Cp" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.371981" id="RPK-vw-Dwf"/>
+                            <constraint firstItem="NHY-Hs-xeD" firstAttribute="top" secondItem="LIc-Rr-S4U" secondAttribute="top" multiplier="1.05" id="SJY-UP-iwX"/>
+                            <constraint firstItem="XJj-aj-rwM" firstAttribute="top" secondItem="SmX-W6-rh0" secondAttribute="bottom" id="SkE-fH-XfI"/>
+                            <constraint firstItem="kSW-qA-9rU" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0443925" id="SvS-rS-Fh7"/>
+                            <constraint firstItem="eGh-Ey-qNk" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="TUi-bt-CUx"/>
+                            <constraint firstItem="oLx-F9-4MS" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="Twa-PH-4Wd"/>
+                            <constraint firstItem="Elr-3V-AEo" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="UIe-4Y-GEb"/>
+                            <constraint firstItem="6Li-mA-2j9" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="UXs-hi-wNI"/>
+                            <constraint firstItem="rTJ-gP-EQb" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="WkJ-BL-WdF"/>
+                            <constraint firstItem="SmX-W6-rh0" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.47343" id="XdS-BA-Wch"/>
+                            <constraint firstItem="uJy-ex-3O1" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.84058" id="YSa-ly-8ar"/>
+                            <constraint firstItem="I4w-AJ-3up" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.485507" id="Zi3-xJ-meo"/>
+                            <constraint firstItem="2PL-Rr-a7Q" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="Zrv-9h-gA7"/>
+                            <constraint firstItem="6Li-mA-2j9" firstAttribute="top" secondItem="XJj-aj-rwM" secondAttribute="bottom" id="aSK-af-eDL"/>
+                            <constraint firstItem="Uff-Qa-Jet" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="aXm-2w-waz"/>
+                            <constraint firstItem="9zP-bL-3Cp" firstAttribute="top" secondItem="eGh-Ey-qNk" secondAttribute="bottom" multiplier="0.99" id="awm-9u-YKh"/>
+                            <constraint firstItem="I4w-AJ-3up" firstAttribute="top" secondItem="y4m-bl-GAb" secondAttribute="bottom" id="bPT-no-LrV"/>
+                            <constraint firstItem="y4m-bl-GAb" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.444444" id="cCh-i1-XZv"/>
+                            <constraint firstItem="uJy-ex-3O1" firstAttribute="top" secondItem="NHY-Hs-xeD" secondAttribute="bottom" id="cco-Qz-5Ko"/>
+                            <constraint firstItem="eGh-Ey-qNk" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.485507" id="cgO-og-CKe"/>
+                            <constraint firstItem="JRP-HY-zJe" firstAttribute="top" secondItem="fZR-8k-zUR" secondAttribute="bottom" id="cw6-na-Lvv"/>
+                            <constraint firstItem="QiP-7A-qVr" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.26087" id="emx-l8-YnY"/>
+                            <constraint firstItem="JAF-96-dCQ" firstAttribute="top" secondItem="Xr8-wb-mRe" secondAttribute="bottom" id="fM6-8H-zP8"/>
+                            <constraint firstItem="Elr-3V-AEo" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.485507" id="fj9-Cg-QJB"/>
+                            <constraint firstItem="fZR-8k-zUR" firstAttribute="top" secondItem="I4w-AJ-3up" secondAttribute="bottom" multiplier="0.99" id="i3L-QH-Nbz"/>
+                            <constraint firstItem="eGh-Ey-qNk" firstAttribute="top" secondItem="Uff-Qa-Jet" secondAttribute="bottom" multiplier="0.99" id="ilk-m5-pRu"/>
+                            <constraint firstItem="Uff-Qa-Jet" firstAttribute="top" secondItem="rTJ-gP-EQb" secondAttribute="bottom" id="jUY-XN-KcQ"/>
+                            <constraint firstItem="JRP-HY-zJe" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="jse-jm-wSA"/>
+                            <constraint firstItem="JAF-96-dCQ" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="jx6-or-yG8"/>
+                            <constraint firstItem="NHY-Hs-xeD" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.405797" id="kNy-bb-XKz"/>
+                            <constraint firstItem="SmX-W6-rh0" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.05" id="lns-f7-zsJ"/>
+                            <constraint firstItem="JAF-96-dCQ" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="mbd-Bc-beY"/>
+                            <constraint firstItem="JRP-HY-zJe" firstAttribute="width" secondItem="BZ5-qS-lPb" secondAttribute="width" multiplier="0.480676" id="qxH-EP-EKd"/>
+                            <constraint firstItem="Elr-3V-AEo" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="rYp-iN-VXL"/>
+                            <constraint firstItem="LIc-Rr-S4U" firstAttribute="trailing" secondItem="kSW-qA-9rU" secondAttribute="trailing" id="szK-mk-45l"/>
+                            <constraint firstItem="QiP-7A-qVr" firstAttribute="top" secondItem="JRP-HY-zJe" secondAttribute="bottom" multiplier="1.01" id="tW0-5s-DDZ"/>
+                            <constraint firstItem="rTJ-gP-EQb" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="uE2-fa-xC9"/>
+                            <constraint firstItem="XJj-aj-rwM" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="wGj-8e-C99"/>
+                            <constraint firstItem="y4m-bl-GAb" firstAttribute="leading" secondItem="LIc-Rr-S4U" secondAttribute="leading" id="wOO-mS-bZ9"/>
+                            <constraint firstItem="9zP-bL-3Cp" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.05625" id="wWJ-WR-HjV"/>
+                            <constraint firstItem="6Li-mA-2j9" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.059375" id="xcJ-vX-O3e"/>
+                            <constraint firstItem="I4w-AJ-3up" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0379464" id="yv9-Pc-iUH"/>
+                            <constraint firstItem="Xr8-wb-mRe" firstAttribute="height" secondItem="BZ5-qS-lPb" secondAttribute="height" multiplier="0.0514019" id="zg6-T5-7pW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LIc-Rr-S4U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EWC-0z-qdW"/>
+                    <connections>
+                        <outlet property="txtApellido" destination="JAF-96-dCQ" id="VPc-XV-88j"/>
+                        <outlet property="txtDireccion" destination="XJj-aj-rwM" id="ynr-vV-vKI"/>
+                        <outlet property="txtEdad" destination="I4w-AJ-3up" id="y6p-iS-a0W"/>
+                        <outlet property="txtEscolaridad" destination="rTJ-gP-EQb" id="kc7-Uz-3A1"/>
+                        <outlet property="txtExperiencia" destination="Elr-3V-AEo" id="dSY-TT-xhH"/>
+                        <outlet property="txtNacionalidad" destination="JRP-HY-zJe" id="Tdh-En-hyR"/>
+                        <outlet property="txtNombre" destination="uJy-ex-3O1" id="WV8-cJ-xth"/>
+                        <outlet property="txtPuesto" destination="2PL-Rr-a7Q" id="uQV-4X-7mj"/>
+                        <outlet property="txtSexo" destination="oLx-F9-4MS" id="u4W-qA-n3x"/>
+                        <outlet property="txtTelefono" destination="eGh-Ey-qNk" id="Hmw-LW-i1Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DW-gC-RmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.52336448598123" y="841.68466522678193"/>
+        </scene>
+        <!--Editar Trabajador Controller-->
+        <scene sceneID="pke-fl-tvD">
+            <objects>
+                <viewController id="CdZ-3Z-DD4" customClass="EditarTrabajadorController" customModule="Worksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uo1-qq-qVw">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOJ-QE-NoF">
+                                <rect key="frame" x="0.0" y="46" width="403.5" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95c-Pv-tWv">
+                                <rect key="frame" x="0.0" y="59" width="265.5" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-lQ-DqI">
+                                <rect key="frame" x="0.0" y="72" width="403.5" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdh-7e-pFz">
+                                <rect key="frame" x="0.0" y="84.5" width="169.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-6Z-cLs">
+                                <rect key="frame" x="0.0" y="98.5" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-ln-x1n">
+                                <rect key="frame" x="338.5" y="101" width="110" height="18"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nacionalidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tn-R9-Dmh">
+                                <rect key="frame" x="0.0" y="110.5" width="218" height="19"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ab-QA-xYb">
+                                <rect key="frame" x="0.0" y="128" width="230.5" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estudios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWR-VB-mg3">
+                                <rect key="frame" x="0.0" y="142" width="186.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bCx-Tk-3j6">
+                                <rect key="frame" x="0.0" y="157" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-h9-Fe4">
+                                <rect key="frame" x="0.0" y="169" width="76.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4CH-jK-qvL">
+                                <rect key="frame" x="0.0" y="184" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-JK-Wsm">
+                                <rect key="frame" x="0.0" y="196" width="204" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-l6-KxO">
+                                <rect key="frame" x="0.0" y="212.5" width="233" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wiu-Xr-JKh" userLabel="Guardar">
+                                <rect key="frame" x="0.0" y="298.5" width="138" height="12"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="20"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" red="0.76424870469999995" green="0.01427703866" blue="0.39180324760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapGuardar:" destination="CdZ-3Z-DD4" eventType="touchUpInside" id="9NU-ki-U1W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOU-8W-o9M" userLabel="Elimibar">
+                                <rect key="frame" x="173.5" y="298.5" width="133" height="12"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <state key="normal" title="Eliminar">
+                                    <color key="titleColor" red="0.76424870469999995" green="0.01427703866" blue="0.39180324760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapEliminar:" destination="CdZ-3Z-DD4" eventType="touchUpInside" id="bxI-xg-Jzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fs-yQ-Ni0">
+                                <rect key="frame" x="363" y="294.5" width="117" height="19"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <state key="normal" title="Editar">
+                                    <color key="titleColor" red="0.76424870469999995" green="0.01427703866" blue="0.39180324760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapEditar:" destination="CdZ-3Z-DD4" eventType="touchUpInside" id="2JR-ph-REA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puesto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP8-VB-2qn">
+                                <rect key="frame" x="0.0" y="251" width="138" height="20"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4E-36-bmC">
+                                <rect key="frame" x="0.0" y="271" width="161" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eC8-77-x5e">
+                                <rect key="frame" x="0.0" y="239" width="161" height="12"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VxD-40-VgI">
+                                <rect key="frame" x="303" y="126" width="151.5" height="12.5"/>
+                                <color key="backgroundColor" red="0.95595854920000001" green="0.93544598030000004" blue="0.049048567010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpQ-QT-NY1">
+                                <rect key="frame" x="0.0" y="32.5" width="480" height="13"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHe-F9-uiQ">
+                                <rect key="frame" x="0.0" y="222.5" width="204" height="17"/>
+                                <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="19"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VxD-40-VgI" firstAttribute="leading" secondItem="dPw-6Z-cLs" secondAttribute="trailing" multiplier="1.3" id="00R-41-0Ne"/>
+                            <constraint firstItem="o4E-36-bmC" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.335749" id="021-dl-VfB"/>
+                            <constraint firstItem="Jdh-7e-pFz" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.352657" id="03E-7I-Lh5"/>
+                            <constraint firstItem="o4E-36-bmC" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="0TX-LS-EDY"/>
+                            <constraint firstItem="eC8-77-x5e" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="0jJ-QJ-Xxz"/>
+                            <constraint firstItem="dPw-6Z-cLs" firstAttribute="top" secondItem="Jdh-7e-pFz" secondAttribute="bottom" id="1NF-XN-pzV"/>
+                            <constraint firstItem="95c-Pv-tWv" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0395833" id="1uQ-PN-CsI"/>
+                            <constraint firstItem="Jdh-7e-pFz" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.04375" id="2BL-F8-cca"/>
+                            <constraint firstItem="4CH-jK-qvL" firstAttribute="top" secondItem="Pvy-h9-Fe4" secondAttribute="bottom" multiplier="0.99" id="2eQ-FN-zRb"/>
+                            <constraint firstItem="zMR-On-oYG" firstAttribute="trailing" secondItem="9fs-yQ-Ni0" secondAttribute="trailing" id="3Gs-sH-rsm"/>
+                            <constraint firstItem="RbY-ln-x1n" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.05625" id="47c-CR-vPu"/>
+                            <constraint firstItem="uWR-VB-mg3" firstAttribute="top" secondItem="1Ab-QA-xYb" secondAttribute="bottom" multiplier="1.01" id="4DU-Cx-BzU"/>
+                            <constraint firstItem="0tn-R9-Dmh" firstAttribute="top" secondItem="dPw-6Z-cLs" secondAttribute="bottom" id="4RB-8n-Zcq"/>
+                            <constraint firstItem="0tn-R9-Dmh" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="691-aQ-DLe"/>
+                            <constraint firstItem="tP4-lQ-DqI" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="6zU-hD-Jdq"/>
+                            <constraint firstItem="zOJ-QE-NoF" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="8Iu-Z2-rfW"/>
+                            <constraint firstItem="zMR-On-oYG" firstAttribute="trailing" secondItem="XpQ-QT-NY1" secondAttribute="trailing" id="8OW-he-P6v"/>
+                            <constraint firstItem="uWR-VB-mg3" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="8jq-AY-U0I"/>
+                            <constraint firstItem="Pvy-h9-Fe4" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.053125" id="9EU-sz-E4X"/>
+                            <constraint firstItem="bCx-Tk-3j6" firstAttribute="top" secondItem="uWR-VB-mg3" secondAttribute="bottom" id="ATK-Fl-h6o"/>
+                            <constraint firstItem="tP4-lQ-DqI" firstAttribute="top" secondItem="95c-Pv-tWv" secondAttribute="bottom" multiplier="1.01" id="AlQ-zV-Ooq"/>
+                            <constraint firstItem="0tn-R9-Dmh" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.059375" id="B1u-9e-rvQ"/>
+                            <constraint firstItem="95c-Pv-tWv" firstAttribute="top" secondItem="zOJ-QE-NoF" secondAttribute="bottom" multiplier="1.01" id="BjB-Rv-O5H"/>
+                            <constraint firstItem="eC8-77-x5e" firstAttribute="top" secondItem="JHe-F9-uiQ" secondAttribute="bottom" multiplier="0.999" id="DB3-iZ-Ruu"/>
+                            <constraint firstItem="RbY-ln-x1n" firstAttribute="top" secondItem="tP4-lQ-DqI" secondAttribute="bottom" multiplier="1.2" id="EQg-Xs-ylJ"/>
+                            <constraint firstItem="9fs-yQ-Ni0" firstAttribute="bottom" secondItem="zMR-On-oYG" secondAttribute="bottom" multiplier="0.98" id="EqD-nJ-K9b"/>
+                            <constraint firstItem="xP8-VB-2qn" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="Ev5-dO-oHV"/>
+                            <constraint firstItem="4eZ-JK-Wsm" firstAttribute="top" secondItem="4CH-jK-qvL" secondAttribute="bottom" id="H3n-wJ-Zr0"/>
+                            <constraint firstItem="bCx-Tk-3j6" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.485507" id="I08-2J-GRi"/>
+                            <constraint firstItem="VxD-40-VgI" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.315217" id="J4k-VS-AtK"/>
+                            <constraint firstItem="eC8-77-x5e" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.335749" id="JGz-0a-kOG"/>
+                            <constraint firstItem="Pvy-h9-Fe4" firstAttribute="top" secondItem="bCx-Tk-3j6" secondAttribute="bottom" id="KD4-RH-Kbc"/>
+                            <constraint firstItem="zOJ-QE-NoF" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.84058" id="L6x-F2-xN2"/>
+                            <constraint firstItem="zMR-On-oYG" firstAttribute="bottom" secondItem="rOU-8W-o9M" secondAttribute="bottom" multiplier="1.03" id="L7V-Tf-5fZ"/>
+                            <constraint firstItem="1Ab-QA-xYb" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="M7L-m4-N8L"/>
+                            <constraint firstItem="XpQ-QT-NY1" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="MU2-9l-df5"/>
+                            <constraint firstItem="o4E-36-bmC" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="NV9-EH-kts"/>
+                            <constraint firstItem="rOU-8W-o9M" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.277778" id="Ndb-LV-w2w"/>
+                            <constraint firstItem="JHe-F9-uiQ" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.053125" id="ORw-HL-gDb"/>
+                            <constraint firstItem="rOU-8W-o9M" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="OW2-er-bXp"/>
+                            <constraint firstItem="zMR-On-oYG" firstAttribute="bottom" secondItem="Wiu-Xr-JKh" secondAttribute="bottom" multiplier="1.03" id="P1T-px-m0V"/>
+                            <constraint firstItem="xP8-VB-2qn" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0625" id="PHg-zY-5cN"/>
+                            <constraint firstItem="95c-Pv-tWv" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="Qll-S8-9wr"/>
+                            <constraint firstItem="VxD-40-VgI" firstAttribute="top" secondItem="RbY-ln-x1n" secondAttribute="bottom" constant="7" id="SIo-Ff-Zto"/>
+                            <constraint firstItem="eC8-77-x5e" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="Tcg-es-ORg"/>
+                            <constraint firstItem="9fs-yQ-Ni0" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0591518" id="TyD-9F-eCq"/>
+                            <constraint firstItem="4CH-jK-qvL" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="Uwz-FJ-Nzk"/>
+                            <constraint firstItem="95c-Pv-tWv" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.55314" id="V56-Kw-UhS"/>
+                            <constraint firstItem="tP4-lQ-DqI" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.84058" id="V8l-5S-o5E"/>
+                            <constraint firstItem="Wiu-Xr-JKh" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="YUV-u4-sw2"/>
+                            <constraint firstItem="rOU-8W-o9M" firstAttribute="centerX" secondItem="Uo1-qq-qVw" secondAttribute="centerX" id="YWn-8I-1je"/>
+                            <constraint firstAttribute="trailing" secondItem="9fs-yQ-Ni0" secondAttribute="trailing" id="Yfg-Sd-bQU"/>
+                            <constraint firstItem="jgs-l6-KxO" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="ZCZ-Z2-w6H"/>
+                            <constraint firstItem="Jdh-7e-pFz" firstAttribute="top" secondItem="tP4-lQ-DqI" secondAttribute="bottom" id="Zei-6C-Dxq"/>
+                            <constraint firstItem="Pvy-h9-Fe4" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.15942" id="Zk4-NT-XmK"/>
+                            <constraint firstItem="JHe-F9-uiQ" firstAttribute="top" secondItem="jgs-l6-KxO" secondAttribute="bottom" multiplier="0.99" id="a24-Zq-lhk"/>
+                            <constraint firstItem="4CH-jK-qvL" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.485507" id="alx-Du-peh"/>
+                            <constraint firstItem="VxD-40-VgI" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="bDB-Hq-zXc"/>
+                            <constraint firstItem="o4E-36-bmC" firstAttribute="top" secondItem="xP8-VB-2qn" secondAttribute="bottom" id="cug-v4-xyK"/>
+                            <constraint firstItem="RbY-ln-x1n" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.229469" id="e2T-0P-gGl"/>
+                            <constraint firstItem="0tn-R9-Dmh" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.454106" id="eEe-TD-NrU"/>
+                            <constraint firstItem="uWR-VB-mg3" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.046875" id="fLY-1g-fX0"/>
+                            <constraint firstItem="tP4-lQ-DqI" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="fxo-3Q-d2g"/>
+                            <constraint firstItem="dPw-6Z-cLs" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="g16-pz-zOp"/>
+                            <constraint firstItem="bCx-Tk-3j6" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="g8d-bA-t3j"/>
+                            <constraint firstItem="zOJ-QE-NoF" firstAttribute="top" secondItem="XpQ-QT-NY1" secondAttribute="bottom" multiplier="1.01" id="gBC-aW-JVh"/>
+                            <constraint firstItem="jgs-l6-KxO" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="grF-hm-Uuo"/>
+                            <constraint firstItem="1Ab-QA-xYb" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.480676" id="hbK-F0-Mxa"/>
+                            <constraint firstItem="Wiu-Xr-JKh" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="hww-MN-VsL"/>
+                            <constraint firstItem="Pvy-h9-Fe4" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="iaX-Ax-baB"/>
+                            <constraint firstItem="zOJ-QE-NoF" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="ino-PG-zwx"/>
+                            <constraint firstItem="bCx-Tk-3j6" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="itB-xQ-mdV"/>
+                            <constraint firstItem="Wiu-Xr-JKh" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.28744" id="jH2-tD-Vaa"/>
+                            <constraint firstItem="xP8-VB-2qn" firstAttribute="top" secondItem="eC8-77-x5e" secondAttribute="bottom" id="jPP-HZ-Brf"/>
+                            <constraint firstItem="xP8-VB-2qn" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.03125" id="jcR-0Y-tbi"/>
+                            <constraint firstItem="XpQ-QT-NY1" firstAttribute="top" secondItem="zMR-On-oYG" secondAttribute="top" multiplier="1.01" id="kEN-U3-yvX"/>
+                            <constraint firstItem="4CH-jK-qvL" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="mEW-Pr-Urk"/>
+                            <constraint firstItem="4eZ-JK-Wsm" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="mIq-av-hCK"/>
+                            <constraint firstItem="Jdh-7e-pFz" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="mSC-V0-uDU"/>
+                            <constraint firstItem="dPw-6Z-cLs" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0379464" id="mcg-dK-EJc"/>
+                            <constraint firstItem="9fs-yQ-Ni0" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.243961" id="ncF-oV-2gn"/>
+                            <constraint firstItem="4eZ-JK-Wsm" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.425" id="nxK-PO-ZrZ"/>
+                            <constraint firstItem="1Ab-QA-xYb" firstAttribute="top" secondItem="0tn-R9-Dmh" secondAttribute="bottom" multiplier="0.99" id="nyS-eP-WcN"/>
+                            <constraint firstItem="jgs-l6-KxO" firstAttribute="top" secondItem="4eZ-JK-Wsm" secondAttribute="bottom" id="ogs-sY-HBE"/>
+                            <constraint firstItem="jgs-l6-KxO" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.485507" id="pJv-l3-Us3"/>
+                            <constraint firstItem="XpQ-QT-NY1" firstAttribute="height" secondItem="Uo1-qq-qVw" secondAttribute="height" multiplier="0.0416667" id="pfc-gK-JKW"/>
+                            <constraint firstItem="JHe-F9-uiQ" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.425" id="qgO-Wr-ogf"/>
+                            <constraint firstItem="JHe-F9-uiQ" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="s6E-GD-ua3"/>
+                            <constraint firstItem="Wiu-Xr-JKh" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="sLX-oz-ZvJ"/>
+                            <constraint firstItem="RbY-ln-x1n" firstAttribute="leading" secondItem="Jdh-7e-pFz" secondAttribute="trailing" multiplier="2" id="tj1-Br-qWI"/>
+                            <constraint firstItem="xP8-VB-2qn" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.2875" id="u1b-sa-joB"/>
+                            <constraint firstItem="dPw-6Z-cLs" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.485507" id="u3T-QG-WO2"/>
+                            <constraint firstItem="uWR-VB-mg3" firstAttribute="width" secondItem="Uo1-qq-qVw" secondAttribute="width" multiplier="0.388889" id="va9-0X-1YR"/>
+                            <constraint firstItem="1Ab-QA-xYb" firstAttribute="leading" secondItem="zMR-On-oYG" secondAttribute="leading" id="yiP-Ee-EdO"/>
+                            <constraint firstItem="4eZ-JK-Wsm" firstAttribute="height" secondItem="4CH-jK-qvL" secondAttribute="height" multiplier="1.33333" id="zDy-ji-TjE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zMR-On-oYG"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PHg-zY-5cN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="PHg-zY-5cN"/>
+                                <exclude reference="jcR-0Y-tbi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="wjI-px-eGN"/>
+                    <connections>
+                        <outlet property="btnEditar" destination="9fs-yQ-Ni0" id="4wo-LD-73q"/>
+                        <outlet property="btnEliminar" destination="rOU-8W-o9M" id="WeV-qp-hcg"/>
+                        <outlet property="btnGuardar" destination="Wiu-Xr-JKh" id="7DJ-mf-nXq"/>
+                        <outlet property="txtApellido" destination="tP4-lQ-DqI" id="cC1-0Z-Pcn"/>
+                        <outlet property="txtDireccion" destination="eC8-77-x5e" id="Hf5-XX-8Eh"/>
+                        <outlet property="txtEdad" destination="dPw-6Z-cLs" id="Rha-xW-bip"/>
+                        <outlet property="txtEscolaridad" destination="bCx-Tk-3j6" id="9UT-cM-NXB"/>
+                        <outlet property="txtExperiencia" destination="jgs-l6-KxO" id="97p-xT-Kg3"/>
+                        <outlet property="txtNacionalidad" destination="1Ab-QA-xYb" id="M4h-ZZ-eQC"/>
+                        <outlet property="txtNombre" destination="zOJ-QE-NoF" id="anS-2S-v9n"/>
+                        <outlet property="txtPuesto" destination="o4E-36-bmC" id="hs0-4r-kWS"/>
+                        <outlet property="txtSexo" destination="VxD-40-VgI" id="g4y-w8-dfz"/>
+                        <outlet property="txtTelefono" destination="4CH-jK-qvL" id="JMn-7s-fa9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yz-IV-gMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058.4507042253522" y="136.875"/>
+        </scene>
+    </scenes>
+</document>
